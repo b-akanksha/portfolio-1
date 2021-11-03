@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar-image {
+  width: 5%;
+}
+
+.nav-link {
+  font-weight: 600;
+  border-top: 2px solid transparent;
+}
+
+.nav-link.active, .nav-link:hover, .nav-link:focus {
+  border-top: 2px solid #fd7e14;
+  color: #fff;
 }
