@@ -142,7 +142,7 @@ body {
 
 .photo {
   width: 150px;
-  height: 200px;
+  height: 150px;
   border-radius: 25%;
   background-color: antiquewhite;
   padding: 25px;
@@ -150,7 +150,7 @@ body {
 
 .about-me-text {
   text-align: left;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .linkedin-image {
@@ -165,14 +165,13 @@ body {
 
 .bio-data {
   text-align: left;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 /* ----------Experience section---------- */
 #experience {
   margin: 50px auto;
-  width: 500px;
-  height: 500px;
+  width: 600px;
 }
 
 /* ----------Media query---------- */
@@ -185,5 +184,16 @@ body {
   }
   .typed-text {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #experience {
+    margin: 50px 0px 0px 10px;
+    width: 300px;
+  }
+
+  #react-chrono-timeline {
+    margin: 0;
   }
 }

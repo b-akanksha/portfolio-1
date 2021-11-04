@@ -38,6 +38,12 @@ const items = [
     cardDetailedText:
       "Studied in VIdyodaya Public School, Udupi and that's it!",
   },
+  {
+    title: "Mar, 1998",
+    cardTitle: "Birth!!",
+    cardDetailedText:
+      "Hello World day!",
+  },
 ];
 
 const Experience = () => {
@@ -49,6 +55,7 @@ const Experience = () => {
         useReadMore={false}
         cardHeight={150}
         scrollable={false}
+        hideControls={true}
         theme={{ 
             primary: "black",
             secondary: "white",
