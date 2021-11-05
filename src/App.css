@@ -43,10 +43,21 @@ body {
   }
 }
 
+.section-title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.footer {
+  display: block;
+  height: 20px;
+  background: #212529;
+}
 /* ----------Navbar styles---------- */
 .navbar {
-  z-index: 2;
-  position: fixed;
+  z-index: 4;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -172,6 +183,62 @@ body {
 #experience {
   margin: 50px auto;
   width: 600px;
+}
+
+/* ----------Contact Me section---------- */
+#contact-me {
+  margin: 20px auto;
+  padding: 0px 5px;
+}
+
+#contact-form {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.toast-container {
+  text-align: center;
+  width: 90% !important;
+}
+
+.formRow {
+  margin: 10px 0 20px;
+}
+
+.formInput {
+  padding: 20px 10px;
+  color: #212529;
+  box-shadow: 0 0 0 2px #212529;
+}
+
+.formInput:focus {
+  color: #212529;
+  box-shadow: 0 0 0 2px #212529 !important;
+  border-color: #212529 !important;
+}
+
+.errorMessage {
+  color: red;
+}
+.btn-main-contact-me {
+  border: 1px solid #212529;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem;
+  color: #212529;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-main-contact-me:hover,
+.btn-main-contact-me:active,
+.btn-main-contact-me:focus {
+  border: 1px solid #212529;
+  background-color: #212529;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
 }
 
 /* ----------Media query---------- */

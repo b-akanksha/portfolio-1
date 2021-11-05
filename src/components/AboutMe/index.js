@@ -5,6 +5,7 @@ import linkedin from "../../assets/linkedin.png";
 const AboutMe = () => {
   return (
     <div id="about-me" className="container about-me">
+      <p className="section-title">About Me</p>
       <div className="row">
         <div className="col-sm-12 col-md-6 col-lg-4">
           <img src={womanPhoto} alt="ABOUT ME" className="photo" />
@@ -30,23 +31,25 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-4 bio-data">
-          <table class="table table-borderless">
-            <tr>
-              <td class="badge bg-dark">Name</td>
-              <td>Akanksha</td>
-            </tr>
-            <tr>
-              <td class="badge bg-dark">Age</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td class="badge bg-dark">Place</td>
-              <td>India</td>
-            </tr>
-            <tr>
-              <td class="badge bg-dark">Gender</td>
-              <td>Female</td>
-            </tr>
+          <table className="table table-borderless">
+            <tbody>
+              <tr>
+                <td className="badge bg-dark">Name</td>
+                <td>Akanksha</td>
+              </tr>
+              <tr>
+                <td className="badge bg-dark">Age</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td className="badge bg-dark">Place</td>
+                <td>India</td>
+              </tr>
+              <tr>
+                <td className="badge bg-dark">Gender</td>
+                <td>Female</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

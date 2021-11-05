@@ -41,14 +41,14 @@ const items = [
   {
     title: "Mar, 1998",
     cardTitle: "Birth!!",
-    cardDetailedText:
-      "Hello World day!",
+    cardDetailedText: "Hello World day!",
   },
 ];
 
 const Experience = () => {
   return (
     <div id="experience">
+      <p className="section-title">Experience</p>
       <Chrono
         items={items}
         mode="VERTICAL_ALTERNATING"
@@ -56,11 +56,11 @@ const Experience = () => {
         cardHeight={150}
         scrollable={false}
         hideControls={true}
-        theme={{ 
-            primary: "black",
-            secondary: "white",
-            titleColor: "black"
-          }}
+        theme={{
+          primary: "black",
+          secondary: "white",
+          titleColor: "black",
+        }}
       />
     </div>
   );

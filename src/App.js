@@ -1,95 +1,98 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from "react-tsparticles";
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Experience from './components/Experience';
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-    <Particles 
-      params={{
-        particles: {
-          number: {
-            value: 100,
-            density: {
-              enable: true,
-              area: 900
-            }
-          },
-          color: {
-            value: "#f9ab00",
-            animation: {
-              enable: true,
-              speed: 30
-            }
-          },
-          shape: {
-            type: ["triangle", "circle", "square"]
-          },
-          size: {
-            value: {
-              min: 3,
-              max: 5
-            }
-          },
-          move: {
-            direction: "bottom",
-            enable: true,
-            outModes: {
-              default: "out"
+      <Particles
+        params={{
+          particles: {
+            number: {
+              value: 100,
+              density: {
+                enable: true,
+                area: 900,
+              },
             },
-            size: true,
-            speed: {
-              min: 1,
-              max: 3
-            }
-          },
-          opacity: {
-            value: 1,
-            animation: {
-              enable: false,
-              startValue: "max",
-              destroy: "min",
-              speed: 0.3,
-              sync: true
-            }
-          },
-          rotate: {
-            value: {
-              min: 0,
-              max: 360
+            color: {
+              value: "#f9ab00",
+              animation: {
+                enable: true,
+                speed: 30,
+              },
             },
-            direction: "random",
-            move: true,
-            animation: {
-              enable: true,
-              speed: 60
-            }
-          },
-          tilt: {
-            direction: "random",
-            enable: true,
-            move: true,
-            value: {
-              min: 0,
-              max: 360
+            shape: {
+              type: ["triangle", "circle", "square"],
             },
-            animation: {
+            size: {
+              value: {
+                min: 3,
+                max: 5,
+              },
+            },
+            move: {
+              direction: "bottom",
               enable: true,
-              speed: 60
-            }
+              outModes: {
+                default: "out",
+              },
+              size: true,
+              speed: {
+                min: 1,
+                max: 3,
+              },
+            },
+            opacity: {
+              value: 1,
+              animation: {
+                enable: false,
+                startValue: "max",
+                destroy: "min",
+                speed: 0.3,
+                sync: true,
+              },
+            },
+            rotate: {
+              value: {
+                min: 0,
+                max: 360,
+              },
+              direction: "random",
+              move: true,
+              animation: {
+                enable: true,
+                speed: 60,
+              },
+            },
+            tilt: {
+              direction: "random",
+              enable: true,
+              move: true,
+              value: {
+                min: 0,
+                max: 360,
+              },
+              animation: {
+                enable: true,
+                speed: 60,
+              },
+            },
           },
-          
-        }
-      }}
-    />
-    <Navbar />
-    <Header />
-    <AboutMe />
-    <Experience />
+        }}
+      />
+      <Navbar />
+      <Header />
+      <AboutMe />
+      <Experience />
+      <ContactMe />
+      <Footer />
     </>
   );
 }
